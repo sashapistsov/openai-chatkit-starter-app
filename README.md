@@ -41,6 +41,8 @@ Update `.env.local` with the variables that match your setup.
 - `OPENAI_API_KEY` — This must be an API key created **within the same org & project as your Agent Builder**. If you already have a different `OPENAI_API_KEY` env variable set in your terminal session, that one will take precedence over the key in `.env.local` one (this is how a Next.js app works). So, **please run `unset OPENAI_API_KEY` (`set OPENAI_API_KEY=` for Windows OS) beforehand**.
 - `NEXT_PUBLIC_CHATKIT_WORKFLOW_ID` — This is the ID of the workflow you created in [Agent Builder](https://platform.openai.com/agent-builder), which starts with `wf_...`
 - (optional) `CHATKIT_API_BASE` - This is a customizable base URL for the ChatKit API endpoint
+- (optional) `AUTH_USERNAME` - Username for basic authentication (defaults to `admin`)
+- (optional) `AUTH_PASSWORD` - Password for basic authentication (defaults to `password`)
 
 > Note: if your workflow is using a model requiring organization verification, such as GPT-5, make sure you verify your organization first. Visit your [organization settings](https://platform.openai.com/settings/organization/general) and click on "Verify Organization".
 
